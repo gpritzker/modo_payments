@@ -1,56 +1,29 @@
-ModoPayments
+# ModoPayments
 ModoPayments es una gema Ruby diseñada para facilitar la interacción con la API de Modo Payments, permitiendo realizar operaciones esenciales como la generación de tokens y la creación de intenciones de pago.
 
-Instalación
+## Instalación
 Para instalar ModoPayments, añade la siguiente línea a tu archivo Gemfile:
 
-gem 'modo_payments', git: 'https://github.com/gpritzker/modo_payments.git'
+    gem 'modo_payments', git: 'https://github.com/gpritzker/modo_payments.git'
 
 Posteriormente, ejecuta el siguiente comando para instalar la gema:
 
-$ bundle install
+    $ bundle install
 
-Configuración
+## Configuración
 Antes de utilizar ModoPayments, es necesario configurar tus credenciales de acceso:
 
-Crea un inicializador en config/initializers/modo_payments.rb:
+Crea un inicializador en config/initializers/
 
-ModoPayments.configure do |config|
-  config.client_id = "YOUR_CLIENT_ID"
-  config.client_secret = "YOUR_CLIENT_SECRET"
-end
+    modo_payments.rb:
+
+    ModoPayments.configure do |config|
+    config.client_id = "YOUR_CLIENT_ID"
+    config.client_secret = "YOUR_CLIENT_SECRET"
+    end
 
 
-¡Claro! A continuación, te presento el README.md con todo el contenido y el formato Markdown apropiado:
-
-ModoPayments
-ModoPayments es una gema Ruby diseñada para facilitar la interacción con la API de Modo Payments, permitiendo realizar operaciones esenciales como la generación de tokens y la creación de intenciones de pago.
-
-Instalación
-Para instalar ModoPayments, añade la siguiente línea a tu archivo Gemfile:
-
-ruby
-Copy code
-gem 'modo_payments', git: 'https://github.com/gpritzker/modo_payments.git'
-Posteriormente, ejecuta el siguiente comando para instalar la gema:
-
-bash
-Copy code
-$ bundle install
-Configuración
-Antes de utilizar ModoPayments, es necesario configurar tus credenciales de acceso:
-
-Crea un inicializador en config/initializers/modo_payments.rb:
-
-ruby
-Copy code
-ModoPayments.configure do |config|
-  config.client_id = "YOUR_CLIENT_ID"
-  config.client_secret = "YOUR_CLIENT_SECRET"
-end
-
-No olvides reemplazar "YOUR_CLIENT_ID" y "YOUR_CLIENT_SECRET" con tus credenciales reales.
-
+### No olvides reemplazar "YOUR_CLIENT_ID" y "YOUR_CLIENT_SECRET" con tus credenciales reales.
 
 ## Uso
 Generar Token de Acceso
