@@ -28,19 +28,18 @@ Crea un inicializador en config/initializers/
 ## Uso
 Generar Token de Acceso
 Para obtener un token de acceso:
-´´´
-token = ModoPayments.generate_access_token
-´´´
+
+    token = ModoPayments.generate_access_token
 
 Crear Intención de Pago
 Para crear una intención de pago:
 
-response = ModoPayments.create_payment_intention(
-  product_name: 'Nombre del producto',
-  price: 1000,
-  currency: 'ARS',
-  expiration_date: '2021-12-31 18:50'
-)
+    response = ModoPayments.create_payment_intention(
+    product_name: 'Nombre del producto',
+    price: 1000,
+    currency: 'ARS',
+    expiration_date: '2021-12-31 18:50'
+    )
 
 ## Desarrollo
 Después de hacer check-out del repositorio, ejecuta bin/setup para instalar las dependencias. Luego, puedes correr rake test para ejecutar las pruebas unitarias. Si deseas iniciar una sesión interactiva que te permita experimentar, puedes ejecutar bin/console.
